@@ -1,0 +1,53 @@
+deque
+	* Uses chunks of memory
+	* Elements are not sorted
+	* Supports random access
+	* Insertion at front and back takes O(1) and at middle takes O(n / 2) as either the first or second half of elements has to be moved
+
+list
+	* Uses links where every element has a reference to its previous and next element
+	* Elements are not sorted
+	* Does not support random access
+	* Insertion at front, middle and back takes O(1)
+
+map
+	* Uses key-value pairs but a key can have only one value
+	* Keys are sorted
+	* Supports random access using keys
+	* Insertion at front, middle and back takes O(log n)
+
+multimap
+	* Uses key-value pairs but a key can have multiple values
+	* Keys are sorted
+	* Supports random access using keys
+	* Insertion at front, middle and back takes O(log n)
+
+queue
+	* Elements are not sorted
+	* Does not support random access
+	* Insertion can only be at the back which takes O(1)
+	* Deletion can only be at the front which takes O(1)
+
+priority_queue
+	* Elements are sorted in descending order
+	* Does not support random access
+	* Insertion can only be at the back which takes O(1)
+	* Deletion can only be at the front which takes O(1)
+
+set
+	* Elements are unique
+	* Elements are sorted
+	* Insertion at front, middle and back takes O(log n)
+
+multiset
+	* Elements are sorted
+	* Insertion at front, middle and back takes O(log n)
+
+stack
+	* Elements are not sorted
+	* Insertion and deletion can only be at the back which takes O(1)
+
+vector
+	* Uses array
+	* Supports random access
+	* Insertion at front and middle takes O(n) and at end takes O(1)
